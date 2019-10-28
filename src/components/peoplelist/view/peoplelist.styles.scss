@@ -1,0 +1,114 @@
+.people-list-container {
+  h1 {
+    font-size: 1.5em;
+    margin-top: 50px;
+  }
+
+  p {
+    color: #777;
+    font-size: 1em;
+  }
+
+  .people-list-group {
+    margin-bottom: 50px;
+    label {
+      flex: 0 0 200px;
+      margin-bottom: 0;
+    }
+
+    select {
+      flex: 0 0 300px;
+    }
+  }
+
+  .user-row-container {
+    margin-bottom: 30px;
+
+    ul {
+      margin-bottom: 0;
+  
+      li {
+        .user-container {
+          display: flex;
+
+          .custom-container {
+            display: flex;
+            align-items: center;
+            flex: 0 0 100%;
+            max-width: 280px;
+
+            &.selected-user {
+              border-radius: 30px;
+              background-image: linear-gradient(to right, #ffffff, #fbfbfb, #f6f6f6, #f2f2f2, #eeeeee);
+              border: 1px solid #CCC;
+            }
+
+            h6 {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .user-info-container {
+    border-left: 1px solid #CCC;
+
+    .user-info-header {
+      position: relative;
+
+      .user-info-bg {
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        min-height: 500px;
+        filter: blur(7px);
+        -webkit-filter: blur(7px);
+      }
+
+      .user-info-avatar {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+
+        h4 {
+          color: #FFF;
+          padding-top: 30px;
+          margin-bottom: 0;
+          text-align: center;
+        }
+
+        h6 {
+          color: #FFF;
+          padding-top: 10px;
+          margin-bottom: 0;
+          text-align: center;
+        }
+
+        > img {
+          width: 200px;
+          border: 4px solid #FFF;
+        }
+      }
+    }
+
+    .user-info-description {
+      padding: 50px;
+
+      p {
+        font-size: 1.3em;
+        color: #000;
+        margin-bottom: 30px;
+      }
+
+      h6 {
+        font-size: 1em;
+        color: #777;
+        margin-bottom: 4px;
+      }
+    }
+  }
+}
